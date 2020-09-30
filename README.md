@@ -177,7 +177,7 @@ Each blog post should contain yaml metadata as follows:
         date: 2009-01-01 10:12:14 Asia/Shanghai
         tags: [ tag1, tah2 ]
 
-Next, you may add images for blog:
+Next, you can add images for blog:
 
     TargetList(Image, "blog/images", Find("*.jpg", "blog/images"))
     TargetList(Image, "blog/images", Find("*.png", "blog/images"))
@@ -191,7 +191,7 @@ Finally, generate articles and lists:
     # Generate articles with given template:
     BlogGenerateArticles("template.blog_template")
 
-    # Generate article list with given template and list template.
+    # Generate articles list with given template and list template.
     # Mustache templated should be used in blog/index.html to render lists.
     BlogGenerateList("blog/index.html", "template.blog_template")
     BlogGenerateTags("blog/index.html", "template.blog_template")
